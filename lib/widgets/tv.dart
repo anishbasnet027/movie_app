@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../movieDescription.dart';
+
 class TV extends StatelessWidget {
   final List tv;
 

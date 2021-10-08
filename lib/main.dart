@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:movie_app_flutter/splash.dart';
 import 'package:movie_app_flutter/widgets/toprated.dart';
 import 'package:movie_app_flutter/widgets/tv.dart';
 import 'package:tmdb_api/tmdb_api.dart';
@@ -10,10 +11,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Home(),
+      home: SplashScreen(),
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-          brightness: Brightness.dark, primaryColor: Colors.pinkAccent),
+      // theme: ThemeData(
+      //     brightness: Brightness.dark, primaryColor: Colors.pinkAccent),
     );
   }
 }
@@ -66,7 +67,7 @@ class Home_State extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      // backgroundColor: Colors.black,
       appBar: AppBar(
         title: Text('Movie App'),
       ),
